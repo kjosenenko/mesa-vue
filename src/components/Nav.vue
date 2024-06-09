@@ -1,7 +1,7 @@
 <template>
   <div className="navbar navbar-expand-lg nav-background">
     <div className="container-fluid">
-      <h1><a className="logo" href="/">MESA DIVIDE</a></h1>
+      <h1><a className="logo" href="/">THE MESA DIVIDE</a></h1>
       <div className="d-none d-lg-block">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-link">

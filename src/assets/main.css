@@ -16,13 +16,13 @@ code {
 }
 
 #container-div {
-  background-color: #E5392B;
+  background-color: #D45943;
   border-radius: 15px; 
   padding: 10px;
 }
 
 #mobile-container {
-  background-color: #E5392B;
+  background-color: #D45943;
 }
 
 body {
@@ -41,7 +41,7 @@ input {
 }
 
 h1 {
-  font-family: 'stilted' !important;
+  font-family: 'Bebas Neue', cursive !important;
 }
 
 .white {
@@ -61,7 +61,7 @@ h1 {
 }
 
 .nav-background {
-  background-color: #E5392B;
+  background-color: #D45943;
 }
 
 .card {
@@ -109,7 +109,7 @@ body {
 }
 
 .logo {
-  font-family: 'stilted' !important;
+  font-family: 'Bebas Neue', cursive !important;
   font-weight: bold !important;
   color:#191B1B;
   text-decoration: none;
@@ -120,9 +120,8 @@ body {
 }
 
 .image {
-  height: 80%;
-  width: 80%;
-  border-radius: 10px;
+  height: 40%;
+  width: 40%;
 }
 
 .show_image {
@@ -131,5 +130,5 @@ body {
 }
 
 .presale_link {
-  color: #E5392B;
+  color: #D45943;
 }

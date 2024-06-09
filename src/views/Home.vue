@@ -1,6 +1,6 @@
 <template>
   <div className='white center-text'>
-    <!-- <img src="Stilted_Demisefest.jpg" className='image' /> -->
+    <img src="../assets/mesa_logo.png" className='image' />
     <br />
     <br />
     <div className='container'>
