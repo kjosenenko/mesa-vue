@@ -1,19 +1,17 @@
 import { reactive } from 'vue'
 
-const apiBase = 'http://localhost:8000'
+export const apiBase = 'http://localhost:8000'
 
-export const shows = [
-  {
-    id: 18,
-    venue: "STILTED - Live at The Whiskey",
-    presale_link: "http://surfsideseven.com/rock.html",
-    has_presale: true,
-    show_date_time: "2016-01-12T20:30:00-07:00",
-    image: "/media/shows/prettyLoud.jpg"
-  }
-]
+export let shows = [{
+  id: 18,
+  venue: "STILTED - Live at The Whiskey",
+  presale_link: "http://surfsideseven.com/rock.html",
+  has_presale: true,
+  show_date_time: "2016-01-12T20:30:00-07:00",
+  image: "/media/shows/prettyLoud.jpg"
+}]
 
-export const pastShows = [
+export let pastShows = [
   {
   id: 1,
   venue: "Surfside 7 with Mesa Divide",
