@@ -1,5 +1,10 @@
 <script setup>
   import { reactive } from 'vue'
+  import dayjs from 'dayjs'
+
+  function formatDate(date) {
+    return dayjs(date).format('MM/DD/YYYY hh:mm A');
+  }
 
   const shows = [
     {
@@ -132,7 +137,7 @@
           <div className="col-md-10">
             <div className="card-body">
               <h3>{{show.venue}}</h3>
-              <h5>{{show.show_date_time}}</h5>
+              <h5>{{formatDate(show.show_date_time)}}</h5>
               <a v-if="show.has_presale" className='presale_link' :href="show.presale_link">More Info</a>
             </div>
           </div>
@@ -153,7 +158,7 @@
           <div className="col-md-12">
             <div className="card-body">
               <h3>{{show.venue}}</h3>
-              <h5>{{show.show_date_time}}</h5>
+              <h5>{{formatDate(show.show_date_time)}}</h5>
             </div>
           </div>
         </div>
