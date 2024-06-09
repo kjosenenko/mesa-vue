@@ -10,5 +10,6 @@ import Footer from './components/Footer.vue'
   <div id="container-div" className="container">
     <RouterView />
   </div>
+  <br />
   <Footer />
 </template>
