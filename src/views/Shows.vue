@@ -6,12 +6,28 @@
     return dayjs(date).format('MM/DD/YYYY hh:mm A');
   }
 
+  function formatImgUrl(path) {
+    return 'http://localhost:8000' + path
+  }
+
   const shows = [
+    {
+    id: 18,
+    venue: "STILTED - Live at The Whiskey",
+    presale_link: null,
+    has_presale: true,
+    presale_link: "http://surfsideseven.com/rock.html",
+    show_date_time: "2016-01-12T20:30:00-07:00",
+    image: "/media/shows/prettyLoud.jpg"
+    }
+  ]
+
+  const pastShows = [
     {
     id: 1,
     venue: "Surfside 7 with Mesa Divide",
-    presale_link: "http://surfsideseven.com/rock.html",
-    has_presale: true,
+    presale_link: null,
+    has_presale: false,
     show_date_time: "2024-02-20T16:06:45-07:00",
     image: null
     },
@@ -30,10 +46,7 @@
     has_presale: false,
     show_date_time: "2018-12-20T20:30:00-07:00",
     image: null
-    }
-  ]
-
-  const pastShows = [
+    },
     {
     id: 7,
     venue: "Tonight!Demise Music Festival ft Denver Broncos UK / Stella Luce",
@@ -113,14 +126,6 @@
     has_presale: false,
     show_date_time: "2016-12-31T21:00:00-07:00",
     image: null
-    },
-    {
-    id: 18,
-    venue: "STILTED - Live at The Whiskey",
-    presale_link: null,
-    has_presale: false,
-    show_date_time: "2016-01-12T20:30:00-07:00",
-    image: null
     }
   ]
 </script>
@@ -132,7 +137,7 @@
       <div v-for="show in shows" :key="show.id" className="card">
         <div className="row">
           <div className="col-md-2">
-            <!-- <img className="show_image" src={`${show.image}`}/> -->
+            <img className="show_image" :src="`${formatImgUrl(show.image)}`">
           </div>
           <div className="col-md-10">
             <div className="card-body">
