@@ -41,7 +41,7 @@ input {
 }
 
 h1 {
-  font-family: 'Bebas Neue', cursive !important;
+  font-family: 'Bebas Neue' !important;
 }
 
 .white {
@@ -87,7 +87,7 @@ ul {
 }
 
 body {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue';
 }
 
 .album {
@@ -109,8 +109,8 @@ body {
 }
 
 .logo {
-  font-family: 'Bebas Neue', cursive !important;
-  font-weight: bold !important;
+  font-family: 'Bebas Neue' !important;
+  /* font-weight: bold !important; */
   color:#191B1B;
   text-decoration: none;
 }
