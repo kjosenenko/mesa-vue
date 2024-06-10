@@ -1,9 +1,47 @@
 <script setup>
-  import { reactive } from 'vue'
+  import { reactive, onBeforeMount } from 'vue'
   import dayjs from 'dayjs'
-  import { pastShows } from '../stores/store.js'
-  import { shows } from '../stores/store.js'
-  import { apiBase } from '../stores/store.js'
+
+  const apiBase = 'http://localhost:8000'
+  let shows = []
+  let pastShows = []
+
+  onBeforeMount(() => {
+    setShows();
+    setPastShows();
+  })
+
+  function setShows() {
+    shows = [{
+      id: 18,
+      venue: "STILTED - Live at The Whiskey",
+      presale_link: "http://surfsideseven.com/rock.html",
+      has_presale: true,
+      show_date_time: "2016-01-12T20:30:00-07:00",
+      image: "/media/shows/prettyLoud.jpg"
+    }]
+  }
+
+  function setPastShows() {
+    pastShows = [
+      {
+      id: 1,
+      venue: "Surfside 7 with Mesa Divide",
+      presale_link: "http://surfsideseven.com/rock.html",
+      has_presale: true,
+      show_date_time: "2024-02-20T16:06:45-07:00",
+      image: null
+      },
+      {
+      id: 5,
+      venue: "Stilted playing FoCoMX 2019 at the Whiskey",
+      presale_link: null,
+      has_presale: false,
+      show_date_time: "2019-04-27T23:45:00-06:00",
+      image: null
+      }
+    ]
+  }
 
   function formatDate(date) {
     return dayjs(date).format('MM/DD/YYYY hh:mm A');
