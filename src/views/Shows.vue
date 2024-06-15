@@ -1,11 +1,11 @@
 <script setup>
-  import { reactive, onBeforeMount } from 'vue'
+  import { ref, watch, onBeforeMount } from 'vue'
   import dayjs from 'dayjs'
   import axios from 'axios'
 
   const apiBase = 'http://localhost:8000'
-  let shows = []
-  let pastShows = []
+  const shows = ref([])
+  const pastShows = ref([])
 
   onBeforeMount(() => {
     setShows();
@@ -14,13 +14,13 @@
 
   async function setShows() {
     let response = await axios.get(`${apiBase}/shows/`)
-    shows = response.data
+    shows.value = response.data
     console.log(shows)
   }
 
   async function setPastShows() {
     let response = await axios.get(`${apiBase}/past_shows/`)
-    pastShows = response.data
+    pastShows.value = response.data
     console.log(pastShows)
   }
 
