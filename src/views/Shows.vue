@@ -15,13 +15,11 @@
   async function setShows() {
     let response = await axios.get(`${apiBase}/shows/`)
     shows.value = response.data
-    console.log(shows)
   }
 
   async function setPastShows() {
     let response = await axios.get(`${apiBase}/past_shows/`)
     pastShows.value = response.data
-    console.log(pastShows)
   }
 
   function formatDate(date) {
