@@ -124,6 +124,10 @@ body {
   width: 40%;
 }
 
+.wordmark {
+  height: 4em;
+}
+
 .show_image {
   max-height: 200px;  
   width: auto; 
