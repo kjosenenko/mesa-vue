@@ -17,9 +17,9 @@
         <h1 className="monoton">LATEST RELEASES</h1>
         <img src="../assets/IMG_8970.jpeg" className='photo-mobile mb-2' />
         <div className="music-container">
-          <a className="btn btn-dark" href='https://youtu.be/NtpqNEEa0E0?si=jUREBNAzAAXvC_kf'>Mesa Divide @ Chippers Lanes</a>
-          <a className="btn btn-dark" href='https://youtu.be/ZINV4btYxD8?si=9mKncz-rlnwlyy0W'>Ripper (live) @ Chippers Lanes</a>
-          <a className="btn btn-dark" href='https://youtu.be/oguQUb7i8LA?si=dkgnHJlNC51CHs1_'>Dry Gauging (live) @ Chippers Lanes</a>
+          <a className="btn btn-dark mb-1" href='https://youtu.be/NtpqNEEa0E0?si=jUREBNAzAAXvC_kf'>Mesa Divide @ Chippers Lanes</a>
+          <a className="btn btn-dark mb-1" href='https://youtu.be/ZINV4btYxD8?si=9mKncz-rlnwlyy0W'>Ripper (live) @ Chippers Lanes</a>
+          <a className="btn btn-dark mb-1" href='https://youtu.be/oguQUb7i8LA?si=dkgnHJlNC51CHs1_'>Dry Gauging (live) @ Chippers Lanes</a>
         </div>
       </div>
     </div>
