@@ -2,7 +2,8 @@
   import { ref, watch } from 'vue'
   import axios from 'axios'
 
-  const apiBase = 'http://localhost:8000'
+  const apiBase = 'https://api.themesadivide.com'
+  // const apiBase = 'http://localhost:8000'
   const submitted = ref(false)
   const error = ref(false)
   const message = ref({

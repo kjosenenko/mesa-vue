@@ -3,7 +3,8 @@
   import dayjs from 'dayjs'
   import axios from 'axios'
 
-  const apiBase = 'http://localhost:8000'
+  const apiBase = 'https://api.themesadivide.com'
+  // const apiBase = 'http://localhost:8000'
   const shows = ref([])
   const pastShows = ref([])
 
